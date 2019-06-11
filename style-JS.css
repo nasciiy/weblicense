@@ -1,0 +1,144 @@
+body {
+    height: 450vh;
+    display: grid;
+    grid-template: 
+   "header header header" 80px
+   "aside aside aside"   80px
+   "side-left main side-right" 1fr  
+   "footer footer footer" 50px
+   / 10% 1fr 20%;
+
+}
+
+
+header{
+    grid-area: header;
+    background-image: url(./img/bcgimg.jpeg);
+    display: flex;
+}
+
+header p{
+    font-size: 10px;
+    color: aliceblue;
+    font-weight: bold;
+    margin-top: 8px;
+    letter-spacing: 10px;
+}
+
+.header-left{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.header-left a{
+    color: aliceblue;
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 3px;
+    letter-spacing: 3px;
+}
+
+header h1{
+    font-size: 65px;
+    color: aliceblue;
+    margin-left: 160px;
+    margin-top: 10px;
+    letter-spacing: 10px;
+}
+
+/* ここからside系！！！！！！！！！！！！ */
+
+aside {
+    grid-area: aside;
+    background-color: grey;
+    opacity: 0.3;
+}
+
+.side-left {
+    grid-area: side-left;
+    background-color: grey;
+    opacity: 0.3;
+}
+
+.side-right{
+    grid-area: side-right;
+    background-color: grey;
+    opacity: 0.3;
+}
+
+/* ここからメイン！！！！！！！ */
+
+main h2{
+    background-color: grey;
+    padding: 7px;
+    font-size: 30px;
+    opacity: 0.7;
+}
+
+main h3{
+    color: gray;
+    font-size: 30px;
+    padding: 20px;
+}
+
+main h4{
+    color: gray;
+    font-size: 20px;
+    padding: 10px;
+}
+
+main p{
+    padding: 20px;
+    opacity: 0.8;
+    letter-spacing: 2px;
+}
+
+ul{
+    margin-bottom: 20px;
+}
+
+.bunya{
+    font-weight: bold;
+    padding: 10px;
+}
+
+ol{
+    margin-left: 60px;
+}
+
+.js{
+    color: red;
+    font-weight: bold;
+}
+
+.link{
+    color: rgb(206, 43, 43);
+    font-weight: bold;
+    padding: 20px;
+    
+}
+
+
+footer{
+    grid-area: footer;
+    background-image: url(./img/bcgimg.jpeg);
+
+}
+
+
+/* ここからレスポンシブ ！！！！！*/
+
+@media screen and (max-width:650px){
+    header h1{
+        font-size: 25px;
+        margin-left: 30px;
+        letter-spacing: 0px;
+        margin-top: 25px;
+    }
+
+    
+    
+    
+}

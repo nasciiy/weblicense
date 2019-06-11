@@ -1,0 +1,238 @@
+body {
+    height: 100vh;
+    display: grid;
+    grid-template: 
+   "header header" 10%
+   "aside aside"   20%
+   "main1 main2"  0.5fr
+   "main3 main3"  1fr
+   "footer footer" 5%
+   / 1fr 1fr;
+
+}
+
+
+header{
+    grid-area: header;
+    background-image: url(./img/bcgimg.jpeg);
+    display: flex;
+}
+
+
+header p{
+    font-size: 10px;
+    color: aliceblue;
+    font-weight: bold;
+    margin-top: 8px;
+    letter-spacing: 10px;
+}
+
+.header-left{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    
+}
+
+
+.header-left a{
+    color: aliceblue;
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 3px;
+    letter-spacing: 3px;
+}
+
+a:hover{
+    color:black;
+}
+
+header h1{
+    font-size: 65px;
+    color: aliceblue;
+    margin-left: 300px;
+    margin-top: 10px;
+    letter-spacing: 10px;
+}
+
+
+/* ここからaside!!!!!!!!!!!!! */
+
+aside{
+    grid-area: aside;
+    
+}
+
+aside h2{
+    font-size: 30px;
+    padding: 10px;
+    color: black;
+    background-color: grey;
+    opacity: 0.7;
+}
+
+aside div{
+    width:900px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* ここからmain!!!!!!!!!!!!! */
+
+.main1{
+    grid-area: main1;
+      
+    
+}
+
+.main1 h3{
+    font-size: 30px;
+    padding: 10px;
+    color: black;
+    background-color: grey;
+    opacity: 0.7;
+}
+
+.main1 div{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    margin-top: 30px;
+    
+}
+
+.main1 div a{
+    color:grey;
+    letter-spacing: 5px;
+    margin-top: 20px;
+}
+
+.main1 div a:hover{
+     color:aliceblue;
+     background-color: grey;
+}
+
+.main2{
+    grid-area: main2;
+    
+}
+
+.main2 h3{
+    font-size: 30px;
+    padding: 10px;
+    color: black;
+    background-color: grey;
+    opacity: 0.7;
+
+}
+
+.main2 div{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.main2 div a{
+    color:grey;
+    letter-spacing: 5px;
+    
+}
+
+.main2 div a:hover{
+    color:aliceblue;
+    background-color: grey;
+}
+
+
+.main3{
+    grid-area: main3;
+   
+}
+
+.main3 h3{
+    font-size: 30px;
+    padding: 10px;
+    color: black;
+    background-color: grey;
+    opacity: 0.7;
+    text-align: center;
+}
+
+.main3 div{
+    font-size: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.main3 div a{
+    color:grey;
+    letter-spacing: 5px;
+    
+    
+}
+
+.main3 div a:hover{
+    color:aliceblue;
+   background-color: grey;
+}
+
+
+footer{
+    grid-area: footer;
+    background-image: url(./img/bcgimg.jpeg);
+
+}
+
+
+/* ここからレスポンシブ */
+
+@media screen and (max-width:900px){
+    header h1{
+        margin-left: 150px;
+        letter-spacing: 10px;
+    }
+
+    aside div{
+        width:600px;
+        font-size: 14px;
+    }
+    
+    .main3 div{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:650px){
+    header h1{
+        font-size: 40px;
+        margin-left: 30px;
+        letter-spacing: 0px;
+    }
+
+    aside div{
+        width:450px;
+        font-size: 12px;
+    }
+    
+    body {
+        height: 100vh;
+        display: grid;
+        grid-template: 
+       "header" 10%
+       "aside"   20%
+       "main1"  0.5fr
+       "main2"  0.5fr
+       "main3"  1fr
+       "footer" 5%
+       / 1fr;
+    
+    }
+
+    .main1 div{
+        margin-top: 10px;
+        
+    }
+}
